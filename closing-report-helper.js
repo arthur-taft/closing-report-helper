@@ -276,6 +276,52 @@ document.body.onload = () => {
     `,
   });
 
+  // Prep the data entry table for style changes
+  const originalDataTable = document.querySelector('select#mytable');
+  
+  /*
+  
+  Work in Progress for building a new entry table
+  
+  // Create a wrapper div for the custom table and insert it
+  const customTableDiv = Object.assign(document.createElement('div'), {
+    id: 'custom-table',
+  });
+  originalAreaSelector.insertAdjacentElement('afterend', customTableDiv);
+  
+  // Define ID's for table columns
+  const colID = {
+    endCount: 1,
+    beginCount: 2,
+    mdtime: 3,
+    edtime: 4,
+    cdtime: 5,
+    comments: 6,
+  };
+  
+  // Create the custom table
+  const customTable = Object.assign(document.createElement('table'), {
+    id: 'Custom Table',
+    cellspacing: '0',
+  });
+  
+  // Create the custom table body
+  const customTableBody = Object.assign(document.createElement('tbody'));
+  
+  // Create the rows
+  for(i = 0; i < ; i++) {
+    const customTableRow = Object.assign(document.createElement('tr'), {
+        
+    });
+  }
+  
+  areaOptionColors((area) => {
+    const customDataTable = Object.assign(document.createElement('table'), {
+        id: Lock,
+    });
+  });
+  */
+
   const dataTableStyle = Object.assign(document.createElement('style'), {
     innerHTML: `
       table {
@@ -343,8 +389,6 @@ document.body.onload = () => {
       #mytable td:last-child th:last-child {
         border-bottom-right-radius: 8px;
       }
-
-
 
       #mytable:after {
         content: "";
